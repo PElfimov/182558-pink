@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Елфимов](https://up.htmlacademy.ru/adaptive/11/user/182558).
-* Наставник: `Неизвестно`.
+* Наставник: `Вадим Новаш`.
 
 ---
 
