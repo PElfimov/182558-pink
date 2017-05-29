@@ -26,39 +26,102 @@
     </nav>
   </header>
   <main class="main-main">
-    <form class="location__contact‐form">
-      <div class="location__contact‐form‐inner">
-        <label class="field‐text location__contact‐field">
-          <input class="field‐text__input" type="text" placeholder="Name" name="name">
-        </label>
-        <label class="field‐text location__contact‐field">
-          <input class="field‐text__input" type="email" placeholder="Email" name="email">
-        </label>
-        <label class="field‐text location__contact‐field location__contact‐field‐‐wide">
-          <textarea class="field‐text__input" placeholder="Message" name="message"></textarea>
-        </label>
-        <div class="field‐action location__contact‐field location__contact‐field‐‐wide">
-          <button class="field‐action__btn btn">Send</button>
+    <form class="pink-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="pink-form‐inner">
+        <p class="pink-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <div class="pink-form__foolname">
+          <label class="pink-form__field">
+            <span>Фамилия:</span>
+            <input class="pink-form__input" type="text" placeholder="Укажите фамилию *" name="surname" required>
+          </label>
+          <label class="pink-form__field">
+            <span>Имя:</span>
+            <input class="pink-form__input" type="text" placeholder="Укажите имя *" name="name" required>
+          </label>
+          <label class="pink-form__field">
+            <span>Отчество:</span>
+            <input class="pink-form__input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
+          </label>
+        </div>
+        <div class="pink-form__achievements">
+          <p class="pink-form__title">Ваши безбашенные достижения в путешествии</p>
+          <label class="pink-form__checkbox pink-form__checkbox--checked">
+            <input type="checkbox" name="achievements" value="selfie-shark">
+            <span>Сделал селфи с акулой</span>
+          </label>
+          <label class="pink-form__checkbox pink-form__checkbox--checked">
+            <input type="checkbox" name="achievements" value="burned-beach">
+            <span>Обгорел на пляже</span>
+          </label>
+          <label class="pink-form__checkbox">
+            <input type="checkbox" name="achievements" value="Chuck-Norris">
+            <span>Видел Чака Норриса</span>
+          </label>
+          <label class="pink-form__checkbox">
+            <input type="checkbox" name="achievements" value="souvenirs">
+            <span>Накупил сувениров</span>
+          </label>
+          <label class="pink-form__checkbox pink-form__checkbox--checked">
+            <input type="checkbox" name="achievements" value="kept-tower">
+            <span>Удержал башню</span>
+          </label>
+          <label class="pink-form__checkbox">
+            <input type="checkbox" name="achievements" value="destroyed-hotel">
+            <span>Разгромил отель</span>
+          </label>
+        </div>
+        <div class="pink-form__contacts">
+          <label class="pink-form__field">
+            <span>Номер телефона</span>
+            <input class="pink-form__input" type="tel" placeholder="Номер пожалуйста" name="phone-nomber">
+          </label>
+          <label class="pink-form__field">
+            <span>Адрес почты</span>
+            <input class="pink-form__input" type="email" placeholder="Введите почту *" name="email" required>
+          </label>
+        </div>
+        <div class="pink-form__mobile-platform">
+          <p class="pink-form__title">С каким приложением путешествовали?</p>
+          <label class="pink-form__radio">
+            <input  type="radio" name="platform" value="iOS">
+            <span>Pink для iOS</span>
+          </label>
+          <label class="pink-form__radio">
+            <input  type="radio" name="platform" value="android">
+            <span>Pink на Android</span>
+          </label>
+          <label class="pink-form__radio">
+            <input  type="radio" name="platform" value="windows">
+            <span>Windows Phone</span>
+          </label>
+        </div>
+        <div class="pink-form__your-emotions">
+          <p class="pink-form__title">Опишите свои эмоции</p>
+          <textarea class="pink-form__emotions" rows="10" cols="45" name="text"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <div class="pink-form__send">
+          <button class="pink-form__btn btn">Отправить форму</button>
+            <p class="pink-form__sent-text"><span>*</span> — обязательные поля</p>
         </div>
       </div>
     </form>
 
   </main>
-  <footer class="page-footer ">
-    <a class="page‐footer__logo">
-      <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип «Pink»">
-    </a>
-    <div class="page‐footer__wrapper">
-      <p class="page‐footer__social">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип «Pink»">
+      </a>
+      <p class="page-footer__social">
         <span class="social‐links">
           <a class="social‐link social‐link‐‐tw" target="_blank" href="https://twitter.com/htmlacademy" >Мы в Твитетере</a>
           <a class="social‐link social‐link‐‐fb" target="_blank" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           <a class="social‐link social‐link‐‐yu" target="_blank" href="https://www.youtube.com/user/htmlacademyru">Мы на ютьюбе</a>
         </span>
       </p>
-      <p class="page‐footer__copyright">
+      <p class="page-footer__copyright">
         Разработано:
-        <a class="page‐footer__copyright‐link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright‐link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </p>
     </div>
   </footer>
