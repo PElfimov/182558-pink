@@ -1,0 +1,70 @@
+.download-application {
+  margin-top: -72px;
+  padding-top: 494px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @bg-darkblue;
+  color: white;
+  background-position: top 181px left 39% ,top 5px left 50%;
+  min-height: 668px + 66px;
+}
+
+.download-application__wrapper {
+  .container;
+}
+
+.download-application__btn {}
+
+.download-application__links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.download-application__link {
+  list-style: none;
+
+}
+
+.download-application__link a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download-application__link--appstore a{
+  background-image: url("../img/logo-apple.svg");
+  background-position: top;
+}
+
+.download-application__link--android a{
+  background-image: url("../img/logo-android.svg");
+}
+
+.download-application__link--windows a{
+  background-image: url("../img/logo-microsoft.svg");
+}
+
+.download-application__link-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.download-application__text {
+padding: 0 20px;
+font-size: 14px;
+line-height: 24px;
+font-weight: normal;
+letter-spacing: -0.17px;
+
+}
