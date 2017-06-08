@@ -31,9 +31,27 @@
     min-height: 61px;
   }
 }
-
 @media @desktop-widths {
-  .page-header{
+  .page-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    min-height: 110px;
 
+    .page-header__inner {
+      display: flex;
+      justify-content: space-between;
+      .container;
+      padding-top: 22px;
+    }
+  }
+
+  .page-header__logo-wrapper {
+    width: 100px;
+  }
+  .page-header__logo {
+    padding: 0;
   }
 }

@@ -10,25 +10,27 @@
 
 <body>
   <header class="page-header">
-    <h1 class="page-header__title">Pink - взгляни на жизнь иначе!</h1>
-    <!-- скрыт! -->
-    <div class="page-header__logo page-header__logo--close">
-      <div class="page-header__logo-wrapper">
-        <a><img class="page-header__logo-img" src="img\logo-pink-white-mobile.svg" width="75" height="22" alt="Логоти приложения «Pink»"></a>
+    <div class="page-header__inner">
+      <h1 class="page-header__title">Pink - взгляни на жизнь иначе!</h1>
+      <!-- скрыт! -->
+      <div class="page-header__logo page-header__logo--close">
+        <div class="page-header__logo-wrapper">
+          <a><img class="page-header__logo-img" src="img\logo-pink-white-mobile.svg" width="75" height="22" alt="Логоти приложения «Pink»"></a>
+        </div>
       </div>
+      <nav class="main-nav">
+        <!-- main-nav--open — для открытого состояния меню -->
+        <span class="main-nav__toggler"><span></span></span>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <!-- main-nav--open — для открытого состояния меню -->
-      <span class="main-nav__toggler"><span></span></span>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="">HTML Academy</a></li>
-        </ul>
-    </nav>
-
   </header>
   <main class="main-content">
     <form class="pink-form" action="https://echo.htmlacademy.ru" method="post">

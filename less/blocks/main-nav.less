@@ -13,7 +13,7 @@
   top: -48px;
 }
 
-.main-nav__toggler::after{
+.main-nav__toggler::after {
   content: "";
   display: block;
   width: 30px;
@@ -21,10 +21,9 @@
   position: absolute;
   background-color: #ffffff;
   transform: rotate(45deg) translate(4px, 9px);
-
 }
 
-.main-nav__toggler::before{
+.main-nav__toggler::before {
   content: "";
   display: block;
   position: absolute;
@@ -32,7 +31,6 @@
   height: 5px;
   background-color: #ffffff;
   transform: rotate(-45deg) translate(-9px, 4px);
-
 }
 
 .main-nav__list {
@@ -66,4 +64,20 @@
 .main-nav__item:hover {
   border-top: solid 1px black;
   border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+}
+@media @desktop-widths {
+  .main-nav__list {
+    width: 622px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .main-nav__item {}
+
+  .main-nav__item a {
+    text-transform: none;
+    font-weight: 400;
+  }
 }
