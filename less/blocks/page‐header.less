@@ -1,30 +1,39 @@
-﻿.page-header{
+.page-header {
   background-color: @bg-darkblue;
-  color:#ffffff;
-
-
+  color: #ffffff;
 }
-
 
 .page-header__title {
   .visuali-hidden;
 }
 
-
-.page-header__logo{
-  padding:22px 0;
-  padding-bottom: 25px;
+.page-header__logo {
+  padding: 22px 0 25px;
   height: 22px;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
-
 }
 
-.page-header__logo--close{
-  background-color:inherit;
+.page-header__logo--close {
+  background-color: inherit;
   // Убрать когда меню закроется
 }
 
-.page-header__logo-wrapper{
-.container;
+.page-header__logo-wrapper {
+  .container;
+}
+@media @tablet-widths {
+  .page-header {
+    min-height: 364px;
+  }
+
+  .page-header__logo {
+    min-height: 61px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header{
+
+  }
 }
