@@ -33,12 +33,13 @@
 }
 
 .price-list__item-check {
-  .visuali-hidden;
+  font-size: 0;
 }
 @media @mobile-widths-only {}
 @media @tablet-widths {
   .price-list {
     width: 620px;
+    min-height: 222px;
   }
 
   .price-list__item-header {
@@ -51,8 +52,30 @@
   .price-list__item-header p {
     font-size: 18px;
     margin: 0;
+  }
+
+  .price-list__item {
+    padding: 3px 0 6px 15px;
+    position: relative;
+  }
+
+  .price-list__item-text {
+    font-size: 0;
+  }
+
+  .price-list__item-text-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  .price-list__item-check{
 
   }
 
-  .price-list__item {}
+  .price__pagination{
+    .visuali-hidden;
+  }
+
 }

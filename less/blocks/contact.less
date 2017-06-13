@@ -48,3 +48,42 @@
   text-align: center;
   margin-bottom: 4px;
 }
+@media @mobile-widths-only {}
+@media @tablet-widths {
+  .contact__item {
+    width: 250px;
+  }
+
+  .contact__item--adr {
+    margin: 0 auto;
+  }
+
+  .contact__text {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    margin-top: 45px;
+  }
+
+  .contact__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 47px 24px 22px;
+  }
+
+  .contact__item-title {
+    margin-bottom: 9px;
+  }
+
+  .contact__map {
+    margin: 24px auto 0;
+    background-image: url("../img/map-tablet.jpg");
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: top -346px left 30px;
+    min-height: 376px;
+  }
+}
