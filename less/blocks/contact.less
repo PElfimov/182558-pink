@@ -55,7 +55,7 @@
   }
 
   .contact__item--adr {
-    margin: 0 auto;
+    margin: 21px auto 0;
   }
 
   .contact__text {
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: space-between;
     margin: 47px 24px 22px;
+    flex-wrap: wrap;
   }
 
   .contact__item-title {
@@ -81,9 +82,39 @@
   .contact__map {
     margin: 24px auto 0;
     background-image: url("../img/map-tablet.jpg");
-    min-height: 200px;
     background-repeat: no-repeat;
     background-position: top -346px left 30px;
     min-height: 376px;
+  }
+}
+@media @desktop-widths {
+  .contact__item-wrapper {
+    margin: 60px 35px 22px;
+  }
+
+  .contact__text {
+    font-size: 50px;
+    width: 500px;
+    line-height: 60px;
+    margin-top: 92px;
+  }
+
+  .contact__item {
+    margin: 0;
+  }
+
+  .contact__item-title {
+    margin-bottom: 25px;
+  }
+
+  .contact__item--mail {
+    order: 1;
+  }
+
+  .contact__map {
+    margin: 24px auto 0;
+    background-image: url("../img/map-desktop.jpg");
+    background-position: top -281px left 150px;
+    min-height: 497px;
   }
 }

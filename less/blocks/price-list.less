@@ -70,12 +70,33 @@
     text-transform: none;
   }
 
-  .price-list__item-check{
+  .price-list__item-check {}
 
-  }
-
-  .price__pagination{
+  .price__pagination {
     .visuali-hidden;
   }
+}
+@media @desktop-widths {
+  .price-list {
+    width: 940px;
+    min-height: 282px;
+  }
 
+  .price-list__item-header {
+    font-size: 18px;
+    padding-bottom: 12px;
+    width: 160px;
+  }
+
+  .price-list__item-header p {
+    font-size: 24px;
+  }
+
+  .price-list__item-text-title {
+    font-size: 18px;
+  }
+
+  .price-list__item{
+    padding: 3px 0 3px 19px;
+  }
 }

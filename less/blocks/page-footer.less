@@ -48,14 +48,27 @@
     display: flex;
     justify-content: space-between;
   }
-  .page-footer__social{
+
+  .page-footer__social {
     margin-top: 5px;
     margin-left: 55px;
   }
-  .page-footer__copyright{
+
+  .page-footer__copyright {
     margin-top: 14px;
   }
-
-
 }
-@media @desktop-widths {}
+@media @desktop-widths {
+  .page-footer {
+    padding-top: 70px;
+  }
+
+  .page-footer__wrapper {
+    width: 940px;
+  }
+  .page-footer__copyright{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 45px;
+  }
+}
