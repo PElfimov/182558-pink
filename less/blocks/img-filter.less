@@ -32,9 +32,9 @@
 
 .img-filter__range p {
   display: block;
-  height: 2px;
-  width: 240px;
-  background-color: black;
+  height: 0;
+  width: 238px;
+  border: solid 1px black;
   margin: 35px auto 0;
 }
 
@@ -69,19 +69,14 @@
   .img-filter {
     position: relative;
     margin-right: 4px;
-    margin-bottom: 0px;
-
-
+    margin-bottom: 0;
   }
 
   .img-filter__controls {
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 65px;
+    margin: 17px 0 65px;
     min-height: 190px;
-
   }
 
   .img-filter__btn {
@@ -90,20 +85,19 @@
     border-bottom: 1px solid @bg-lightgrey;
     height: 72px;
     background-color: rgba(255, 255, 255, 0.8);
-
   }
-  .img-filter__button{
+
+  .img-filter__button {
     padding: 13px;
     margin-bottom: 24px;
     width: 258px;
-
   }
+
   .img-filter__range {
-
     margin-bottom: 71px;
-
   }
-  .img-filter__range p{
+
+  .img-filter__range p {
     width: 202px;
     margin-top: 0;
   }
@@ -113,14 +107,58 @@
     top: 55px;
     right: 17px;
   }
-  .img-filter__range--1 .img-filter__range-controls{
+
+  .img-filter__range--1 .img-filter__range-controls {
     right: 43px;
   }
-  .img-filter__range--2 .img-filter__range-controls{
+
+  .img-filter__range--2 .img-filter__range-controls {
     right: 163px;
   }
-  .img-filter__range--3 .img-filter__range-controls{
+
+  .img-filter__range--3 .img-filter__range-controls {
     right: 92px;
   }
+}
+@media @desktop-widths {
+  .img-filter {
+    margin: 0;
+  }
 
+  .img-filter__btn {
+    width: 411px;
+  }
+
+  .img-filter__range p {
+    width: 285px;
+    margin-top: 0;
+  }
+
+  .img-filter__range-wrapper {
+    position: absolute;
+    right: 30px;
+  }
+
+  .img-filter__range--1 .img-filter__range-controls {
+    right: 202px;
+  }
+
+  .img-filter__range--2 .img-filter__range-controls {
+    right: 26px;
+  }
+
+  .img-filter__range--3 .img-filter__range-controls {
+    right: 113px;
+  }
+
+  .img-filter__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 144px;
+  }
+
+  .img-filter__button {
+    width: 184px;
+    margin: 0;
+  }
 }

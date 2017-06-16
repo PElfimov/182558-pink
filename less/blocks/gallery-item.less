@@ -68,7 +68,6 @@
   .gallery-item__like {
     margin-top: auto;
     margin-bottom: 26px;
-
     padding-left: 28px;
     width: 50%;
   }
@@ -77,18 +76,18 @@
     margin-left: 3px;
   }
 
-  .gallery-item__user-text{
+  .gallery-item__user-text {
     padding-right: 10px;
   }
 
   .gallery-item--best-day {
-    width: 660px;
+    width: 100%;
     margin-bottom: 41px;
   }
 
   .gallery-item__photo--best-day {
-    width: auto;
-    margin: 0;
+    width: 660px;
+    margin: 0 auto;
     width: 660px;
     height: 509px;
     background-image: url("../img/panorama-tablet.jpg");
@@ -151,5 +150,48 @@
     font-size: 14px;
     line-height: 24px;
     padding-left: 28px;
+  }
+}
+@media @desktop-widths {
+  .gallery-item {
+    margin-bottom: 56px;
+  }
+
+  .gallery-item__photo {
+    height: 400px;
+  }
+
+  .gallery-item__text {
+    padding-top: 23.5px;
+    min-height: 131px;
+  }
+
+  .gallery-item__user-time {
+    margin-left: 0;
+  }
+
+  .gallery-item--best-day{
+    margin-bottom: 41px;
+  }
+
+  .gallery-item__photo--best-day {
+    width: 1200px;
+    height: 505px;
+    background-image: url("../img/panorama-desktop@0,5x.jpg");
+    background-size: cover;
+  }
+
+  .gallery-item__text--best-day {
+    width: 940px;
+    padding-bottom: 3px;
+    min-height: 71px;
+  }
+
+  .gallery-item__like {
+    margin-bottom: 23px;
+  }
+
+  .gallery-item__text--best-day .gallery-item__like {
+    width: 151px;
   }
 }
