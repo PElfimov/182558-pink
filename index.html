@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
@@ -35,6 +36,7 @@
   <main class="main-content">
     <section class="download-application">
       <div class="download-application__wrapper">
+        <h2 class="download-application__title">Взгляните на жизнь иначе!</h1>
         <a href="" class="btn download-application__btn">Скачать приложение</a>
         <ul class="download-application__links">
           <li class="download-application__link download-application__link--appstore"><a href=""><span class="download-application__link-hidden">Скачать для Apple</span class="download-application__link-hidden"></a></li>
@@ -51,19 +53,28 @@
         <p class="advantages__main-question">Устали от серости мегаполиса?</p>
         <p class="advantages__main-offer">Нам есть, что вам предложить!</p>
         <ol class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Поднимает настроение</h3>
-            <p class="advantages__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-            <p class="advantages__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-title">Заводит новых друзей</h3>
-            <p class="advantages__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-          <ol>
+          <div class="advantages__list-inner">
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Поднимает настроение</h3>
+              <p class="advantages__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+              <p class="advantages__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Заводит новых друзей</h3>
+              <p class="advantages__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </div>
+        </ol>
+        <div class="advantages__bonus">
+          <div class="advantages__bonus-inner">
+            <h3>Эффект </br>на 24 часа!</h3>
+            <p>Британские ученые провели исследования и доказали,&nbsp; что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="reviews">
@@ -74,8 +85,8 @@
           <div class="reviews__list-wrapper slider__wrapper">
             <blockquote class="reviews__item slider__item">
               <cite class=" reviews__auhor-name ">Николай Петров</cite>
-              <p>
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              <span class="reviews__item-profession">25 лет, водитель трамвая</span>
+              <p class="reviews__item-text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span>
               </p>
             </blockquote>
           </div>
@@ -96,52 +107,55 @@
             <th class="price-list__item-header"></th>
             <th class="price-list__item-header">
               <b>База</b>
-              <p><span class="price-list__item-price">1.99</span> USD</p>
+              <p><span class="price-list__item-price">1,99</span> USD</p>
             </th>
             <th class="price-list__item-header price-list__item-header--hit">
               <b>Стандарт</b>
-              <p><span class="price-list__item-price">3.99</span> USD</p>
+              <p><span class="price-list__item-price">3,99</span> USD</p>
             </th>
             <th class="price-list__item-header">
               <b>Анлим</b>
-              <p><span class="price-list__item-price">9.99</span> USD</p>
+              <p><span class="price-list__item-price">9,99</span> USD</p>
             </th>
           </tr>
           <tr class="price-list__line">
-            <td class="price-list__item"></td>
+            <td class="price-list__item">
+              <span class="price-list__item-text-title">Розовый фильтр</span></td>
             <td class="price-list__item">
               <span class="price-list__item-text">Розовый фильтр</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Розовый фильтр</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Розовый фильтр</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
           </tr>
           <tr class="price-list__line">
-            <td class="price-list__item"></td>
+            <td class="price-list__item">
+              <span class="price-list__item-text-title">Смайлики</span></td>
             <td class="price-list__item">
               <span class="price-list__item-text">Смайлики</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Нет</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Нет</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Смайлики</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Смайлики</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
           </tr>
           <tr class="price-list__line">
-            <td class="price-list__item"></td>
+            <td class="price-list__item">
+              <span class="price-list__item-text-title">Комментарии</span></td>
             <td class="price-list__item">
               <span class="price-list__item-text">Комментарии</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span><span><span> - Нет</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть
               </span>
               </span>
             </td>
@@ -151,7 +165,7 @@
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Комментарии</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть</span></span>
+              <span class="price-list__item-check price-list__item-check--enabled"> - Есть</span>
             </td>
           </tr>
         </table>
@@ -167,17 +181,19 @@
         <h2 class="contact__title">Наши контакты</h2>
         <!-- скрыт! -->
         <p class="contact__text">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contact__item">
-          <b class="contact__item-title">Звоните:</b>
-          <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contact__item">
-          <b class="contact__item-title">Пишите:</b>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contact__item">
-          <b class="contact__item-title">Приезжайте в гости:</b>
-          <a href="">ул. Большая Конюшенная, 19/8</a>
+        <div class="contact__item-wrapper ">
+          <div class="contact__item contact__item--call">
+            <b class="contact__item-title">Звоните:</b>
+            <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contact__item contact__item--mail">
+            <b class="contact__item-title">Пишите:</b>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contact__item contact__item--adr">
+            <b class="contact__item-title">Приезжайте в гости:</b>
+            <a href="">ул. Большая Конюшенная, 19/8</a>
+          </div>
         </div>
       </div>
       <div class="contact__map">

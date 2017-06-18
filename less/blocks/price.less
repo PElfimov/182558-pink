@@ -2,7 +2,6 @@
   position: relative;
   display: block;
   background-color: @bg-lightgrey;
-  padding-top: 388px;
   padding-bottom: 47px;
   margin-top: 67px;
 }
@@ -12,8 +11,30 @@
 }
 
 .prise__table {
-  position: absolute;
+  position: relative;
   top: 65px;
 }
 
 .price__pagination {}
+@media @mobile-widths-only {}
+@media @tablet-widths {
+  .price {
+    margin-top: 73px;
+    padding-bottom: 69px;
+  }
+
+  .prise__table {
+    top: 0;
+    margin: 109px auto 0;
+  }
+}
+@media @desktop-widths {
+  .price {
+    margin-top: 77px;
+    padding-top: 66px;
+  }
+
+  .prise__table {
+    margin-top: 0;
+  }
+}
