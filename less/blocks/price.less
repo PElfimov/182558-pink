@@ -10,13 +10,22 @@
   .visuali-hidden;
 }
 
-.prise__table {
-  position: relative;
-  top: 65px;
-}
+.prise__table {}
 
 .price__pagination {}
-@media @mobile-widths-only {}
+@media @mobile-widths-only {
+  .prise__table {
+    transform: translateX(-536px;);
+  }
+
+  .price__wrapper {
+    padding-top: 65px;
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 321px;
+  }
+}
 @media @tablet-widths {
   .price {
     margin-top: 73px;
@@ -24,7 +33,6 @@
   }
 
   .prise__table {
-    top: 0;
     margin: 109px auto 0;
   }
 }
