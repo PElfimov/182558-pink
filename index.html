@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 </head>
 
 <body>
@@ -90,7 +89,7 @@
               </p>
             </blockquote>
             <blockquote class="reviews__item reviews__item--2 slider__item">
-              <cite class=" reviews__auhor-name "Петя Иванов</cite>
+              <cite class=" reviews__auhor-name " Петя Иванов</cite>
               <span class="reviews__item-profession">25 лет, водитель трамвая</span>
               <p class="reviews__item-text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span>
               </p>
@@ -104,9 +103,9 @@
           </div>
         </div>
         <div class="reviews__pagination slider-pagination ">
-          <span class="slider-pagination__item slider-pagination__item--active " tabindex="0"></span>
-          <span class="slider-pagination__item " tabindex="0"></span>
-          <span class="slider-pagination__item " tabindex="0"></span>
+          <span class="slider-pagination__item  slider-pagination__item--active " tabindex="0"></span>
+          <span class="slider-pagination__item" tabindex="0"></span>
+          <span class="slider-pagination__item" tabindex="0"></span>
         </div>
       </div>
     </section>
@@ -151,7 +150,7 @@
               <span class="price-list__item-text-title">Смайлики</span></td>
             <td class="price-list__item">
               <span class="price-list__item-text">Смайлики</span>
-              <span class="price-list__item-check price-list__item-check--enabled"> - Нет</span>
+              <span class="price-list__item-check"> - Нет</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Смайлики</span>
@@ -167,13 +166,13 @@
               <span class="price-list__item-text-title">Комментарии</span></td>
             <td class="price-list__item">
               <span class="price-list__item-text">Комментарии</span>
-              <span class="price-list__item-check price-list__item-check--enabled"><span> - Есть
-              </span>
+              <span class="price-list__item-check"> - Нет
+
               </span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Комментарии</span>
-              <span class="price-list__item-check price-list__item-check--enabled"> - <span>Нет</span></span>
+              <span class="price-list__item-check"> - Нет</span>
             </td>
             <td class="price-list__item">
               <span class="price-list__item-text">Комментарии</span>
@@ -183,9 +182,9 @@
         </table>
       </div>
       <div class="price__pagination slider-pagination ">
-        <span class="slider-pagination__item slider-pagination__item--active "></span>
-        <span class="slider-pagination__item "></span>
-        <span class="slider-pagination__item "></span>
+        <span class="slider-pagination__item slider-pagination__item--border-gray"></span>
+        <span class="slider-pagination__item slider-pagination__item--border-gray slider-pagination__item--active"></span>
+        <span class="slider-pagination__item slider-pagination__item--border-gray"></span>
       </div>
     </section>
     <section class="contact">
@@ -209,7 +208,11 @@
         </div>
       </div>
       <div class="contact__map">
-        <img src="../img/bg-map-mobile@1x.png" width="320" height="200" alt="Карта нашего местоположения">
+        <picture>
+              <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.jpg 1x, ../img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="../img/bg-map-tablet@1x.jpg 1x, ../img/bg-map-tablet@2x.jpg 2x">
+              <img src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x"  alt="Карта нашего местоположения">
+            </picture>
       </div>
 
     </section>
