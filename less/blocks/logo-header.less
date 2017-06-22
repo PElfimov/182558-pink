@@ -1,0 +1,50 @@
+.logo-header {
+  position: absolute;
+  top: -17px;
+  left: -71px;
+}
+
+.logo-header[href]:hover .logo-header__pink-word {
+  fill: #d22856;
+}
+
+.logo-header[href]:active .logo-header__pink-word {
+  fill: rgba(210, 40, 86, 0.3);
+}
+
+.logo-header[href]:hover .logo-header__goggles-clean{
+  fill: #d22856;
+}
+
+.logo-header[href]:active .logo-header__goggles-clean{
+    fill: rgba(210, 40, 86, 0.3);
+}
+
+@media @mobile-widths-only {
+  .logo-header__goggles {
+    display: none;
+  }
+
+  .logo-header__goggles-clean {
+    display: none;
+  }
+
+  .logo-header__stars {
+    display: none;
+  }
+}
+@media @tablet-widths {
+  .logo-header {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+  }
+
+  .logo-header__stars {
+    display: none;
+  }
+  .logo-header__goggles{
+    display: none;
+  }
+}
+@media @desktop-widths {}

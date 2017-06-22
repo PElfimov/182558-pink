@@ -28,23 +28,25 @@
   padding: 50px 0 0;
   background-color: @bg-lightgrey;
   position: relative;
+    min-height: 735px;
+}
+
+.advantages__list::after{
+  content: "";
+  display: block;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: bottom -42px left 50%;
-  min-height: 735px;
+  position: absolute;
+  z-index: 3;
 }
 
-
-
-
-@media (min-resolution: 144dpi),
-       (min-resolution: 1.5dppx) {
-  .advantages__list {
-    background-image:
-    url("../img/iphone-screen-mobile@2x.png");
-    background-size:157px auto;
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .advantages__list::after {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
   }
 }
+
 
 .advantages__item {
   margin-top: 28px;
@@ -65,23 +67,20 @@
   line-height: 24px;
   text-align: center;
 }
+
+.advantages__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/bg-triangle-white.svg");
+  width: 100%;
+  height: 94.074px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
 @media @mobile-widths-only {
   .advantages__bonus {
     .visuali-hidden;
-  }
-
-  .advantages__list::before{
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/bg-triangle-white.svg");
-    top:-40px;
-    width: 100%;
-    height: 94.074px;
-    background-repeat: no-repeat;
-    z-index: 2;
-
-
   }
 }
 @media @tablet-widths {
@@ -98,11 +97,25 @@
   }
 
   .advantages__list {
-    background-image: url("../img/iphone-screen-tadlet@1x.png");
-    background-position: top 0 left 11%;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: top 0 left 3%;
     margin-top: 54px;
     padding-top: 49px;
     min-height: 433px;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .advantages__list {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      width: 268px;
+      height: auto;
+    }
+  }
+
+  .advantages__list::before {
+    background-size: contain;
+    top: 0;
+    left: 0;
+
   }
 
   .advantages__list-inner {
