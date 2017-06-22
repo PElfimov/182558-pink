@@ -47,4 +47,31 @@
     display: none;
   }
 }
-@media @desktop-widths {}
+@media @desktop-widths {
+  .logo-header__stars {
+    display: block;
+  }
+  .logo-header__goggles{
+    display: block;
+  }
+  .logo-header__goggles-clean {
+    display: none;
+  }
+  .logo-header[href]:hover .logo-header__goggles{
+    fill: #d22856;
+  }
+
+  .logo-header[href]:active .logo-header__goggles{
+      fill: rgba(210, 40, 86, 0.3);
+  }
+
+  .logo-header[href]:hover .logo-header__stars{
+    fill:white;
+  }
+
+.logo-header[href]:active .logo-header__stars{
+  fill:rgba(255, 255, 255, 0.3);
+  }
+
+
+}

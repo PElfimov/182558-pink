@@ -13,6 +13,10 @@
   border: 3px solid #f2f2f2;
 }
 
+.price-list__item-header:first-child {
+  background-color: transparent;
+}
+
 .price-list__item-header--hit {
   position: relative;
 }
@@ -79,7 +83,7 @@
   top: 46%;
   right: 6px;
   transform: translate( -50% , -50%);
-  background-size:contain;
+  background-size: contain;
   background-position: center;
 }
 
@@ -100,6 +104,10 @@
     min-height: 222px;
   }
 
+  .price::before {
+    top: -41px;
+  }
+
   .price-list__item-header {
     font-size: 16px;
     width: 151px;
@@ -113,12 +121,12 @@
   }
 
   .price-list__item {
-    padding: 3px 0 6px 15px;
+    padding: 3px 0 6px 11px;
     position: relative;
   }
 
   .price-list__item-text {
-    font-size: 0;
+    .visuali-hidden;
   }
 
   .price-list__item-text-title {
@@ -128,7 +136,13 @@
     text-transform: none;
   }
 
-  .price-list__item-check {}
+  .price-list__item-check {
+    top: 49%;
+  right: 48px
+  }
+  .price-list__item-check--enabled{
+      right: 43px
+  }
 
   .price__pagination {
     .visuali-hidden;

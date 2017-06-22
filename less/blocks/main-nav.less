@@ -103,10 +103,13 @@
   .main-nav__list {
     width: 622px;
     display: flex;
+    flex-wrap: wrap;
     margin-right: 8px;
+    margin-top: 10px;
     justify-content: space-between;
     text-transform: capitalize;
     background-color: rgba(255, 255, 255, 0);
+    border: none;
   }
 
   .main-nav__item {}
@@ -114,5 +117,21 @@
   .main-nav__item a {
     text-transform: none;
     font-weight: 400;
+    border: none;
+    padding: 6px 0;
+  }
+
+  .main-nav__item a[href]:active,
+  .main-nav__item a[href]:hover {
+    border: none;
+  }
+
+  .main-nav__item--active {
+    border-bottom: solid 2px white;
+    margin-bottom: -2px;
+  }
+
+  .main-nav__toggler-wrapper{
+    display: none;
   }
 }
