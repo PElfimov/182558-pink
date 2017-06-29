@@ -23,7 +23,7 @@
 }
 
 .reviews__item--2,
-.reviews__item--3{
+.reviews__item--3 {
   .visuali-hidden;
 }
 
@@ -35,7 +35,7 @@
 }
 @media @mobile-widths-only {
   .reviews__item-profession {
-     .visuali-hidden;
+    .visuali-hidden;
   }
 }
 @media @tablet-widths {
@@ -81,6 +81,9 @@
 @media @desktop-widths {
   .reviews {
     padding-top: 172px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position:top 59px left 50% ;
   }
 
   .reviews__list-wrapper {
@@ -111,5 +114,20 @@
 
   .reviews__item-text span {
     font-size: 0;
+  }
+
+  .reviews__pagination {
+    display: none;
+  }
+
+  .reviews__arrow{
+
+    &--left{
+
+    }
+
+    &--right{
+
+    }
   }
 }
