@@ -139,14 +139,14 @@
 }
 @media @desktop-widths {
   .contact__item-wrapper {
-    margin: 60px 35px 22px;
+    margin: 60px 35px 0px;
   }
 
   .contact__text {
     font-size: 50px;
     width: 500px;
     line-height: 60px;
-    margin-top: 92px;
+    margin-top: 66px;
   }
 
   .contact__item {
@@ -162,7 +162,17 @@
   }
 
   .contact__map {
-    margin: 24px auto 0;
-    min-height: 497px;
+    margin: 0 auto;
+    margin-top: 11px;
+    min-height: 509px;
+
+    &::before{
+      height: 104px;
+    }
+
+    &::after{
+      top: 58%;
+    }
   }
+
 }
