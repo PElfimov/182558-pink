@@ -45,12 +45,11 @@
   }
 
   .gallery-item__photo {
-    width: 300px;
-    height: 300px;
+
     outline: solid red 1px;
   }
 
-  .gallery-item__photo img {}
+
 
   .gallery-item__text {
     display: flex;
@@ -86,17 +85,17 @@
   }
 
   .gallery-item__photo--best-day {
-    width: 660px;
     margin: 0 auto;
     width: 660px;
     height: 509px;
-    background-image: url("../img/panorama-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    overflow: hidden;
+
   }
 
   .gallery-item__photo--best-day img {
-    .visuali-hidden;
+    height: 509px;
+    min-width: 700px;
+    transform: translateX(-24px);
   }
 
   .gallery-item__text--best-day {

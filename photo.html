@@ -79,7 +79,11 @@
       <ul class="gallery__list">
         <li class="gallery-item gallery-item--best-day">
           <div class="gallery-item__photo gallery-item__photo--best-day">
-            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото нашего пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/panorama-desktop@0,5x.jpg 0.5x, /img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x,">
+              <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+              <img src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Фото нашего пользователя">
+            </picture>
           </div>
           <div class="gallery-item__text gallery-item__text--best-day">
             <div class="gallery-item__user">
@@ -96,7 +100,11 @@
         </li>
         <li class="gallery-item">
           <div class="gallery-item__photo">
-            <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Фото нашего пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/panorama-desktop@0,5x.jpg 0.5x, /img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x,">
+              <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+              <img src="/img/panorama-mobile@1x.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Фото нашего пользователя">
+            </picture>
           </div>
           <div class="gallery-item__text">
             <div class="gallery-item__user">
@@ -113,7 +121,12 @@
         </li>
         <li class="gallery-item">
           <div class="gallery-item__photo">
-            <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Фото нашего пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg 1x, /img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg 1x, /img/bg-map-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="/img/bg-map-mobile@2x.jpg 2x" alt="Фото нашего пользователя">
+            </picture>
+
           </div>
           <div class="gallery-item__text">
             <div class="gallery-item__user">
