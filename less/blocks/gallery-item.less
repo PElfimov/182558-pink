@@ -45,11 +45,14 @@
   }
 
   .gallery-item__photo {
-
-    outline: solid red 1px;
+    overflow: hidden;
+    width: 300px;
   }
 
-
+  .gallery-item__photo img {
+    min-width: 300px;
+    height: auto;
+  }
 
   .gallery-item__text {
     display: flex;
@@ -62,26 +65,28 @@
     width: auto;
     min-height: 134px;
     background-color: @bg-lightgrey;
+    min-height: 131px;
   }
 
   .gallery-item__like {
     margin-top: auto;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     padding-left: 28px;
     width: 50%;
   }
 
   .gallery-item__user-time {
-    margin-left: 3px;
+    margin-left: 1px;
   }
 
   .gallery-item__user-text {
     padding-right: 10px;
+    margin: 0;
   }
 
   .gallery-item--best-day {
     width: 100%;
-    margin-bottom: 41px;
+    margin-bottom: 38px;
   }
 
   .gallery-item__photo--best-day {
@@ -89,7 +94,6 @@
     width: 660px;
     height: 509px;
     overflow: hidden;
-
   }
 
   .gallery-item__photo--best-day img {
@@ -103,9 +107,9 @@
     justify-content: flex-start;
     align-content: flex-start;
     padding-top: 24px;
-    padding-bottom: 26px;
+    padding-bottom: 23px;
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     width: 620px;
     min-height: 71px;
   }
@@ -169,15 +173,13 @@
     margin-left: 0;
   }
 
-  .gallery-item--best-day{
+  .gallery-item--best-day {
     margin-bottom: 41px;
   }
 
   .gallery-item__photo--best-day {
     width: 1200px;
     height: 505px;
-    background-image: url("../img/panorama-desktop@0,5x.jpg");
-    background-size: cover;
   }
 
   .gallery-item__text--best-day {
