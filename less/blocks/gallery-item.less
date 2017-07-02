@@ -1,5 +1,5 @@
 .gallery-item {
-  margin-bottom: 41px;
+  margin-bottom: 20px;
 }
 
 .gallery-item__photo {
@@ -14,9 +14,11 @@
 
 .gallery-item__text {
   .container;
-  margin-top: 18px;
+  padding-top: 18px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
+  background-color: @bg-lightgrey;
 }
 
 .gallery-item__user-name {
@@ -25,7 +27,7 @@
 }
 
 .gallery-item__user-text {
-  margin: 2px 0 0;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -33,7 +35,7 @@
 }
 
 .gallery-item__like {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 @media @tablet-widths {
   .gallery-item {
@@ -61,10 +63,10 @@
     justify-content: flex-start;
     align-content: flex-start;
     padding-top: 24px;
+    padding-bottom: 0;
     margin-top: 0;
     width: auto;
     min-height: 134px;
-    background-color: @bg-lightgrey;
     min-height: 131px;
   }
 
