@@ -1,5 +1,6 @@
 .img-filter {
   padding-bottom: 27px;
+  position: relative;
 }
 
 .img-filter__controls {
@@ -12,12 +13,52 @@
   .visuali-hidden;
 }
 
+.img-filter__input-radio:checked + .img-filter__btn {
+  &--border {
+    background-image: url("../img/icon-editor-crop--active.svg");
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill--active.svg");
+  }
+
+  &--brightness {
+    background-image: url("../img/icon-editor-contrast--active.svg");
+  }
+}
+
 .img-filter__btn {
   display: block;
   width: 48px;
   height: 48px;
-  background-color: red;
   margin: 0 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--border {
+    background-image: url("../img/icon-editor-crop.svg");
+
+    &:hover {
+      background-image: url("../img/icon-editor-crop--hover.svg");
+    }
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill.svg");
+
+    &:hover {
+      background-image: url("../img/icon-editor-fill--hover.svg");
+    }
+  }
+
+  &--brightness {
+    background-image: url("../img/icon-editor-contrast.svg");
+
+    &:hover {
+      background-image: url("../img/icon-editor-contrast--hover.svg");
+    }
+  }
 }
 
 .img-filter__range {
@@ -55,14 +96,29 @@
   border-color: #d22856;
   color: #d22856;
   margin: 0 auto;
-  padding: 14px;
-  width: 278px;
-  margin-bottom: 12px;
+  padding: 12px;
+  width: 279px;
+  margin-bottom: 13px;
+}
+
+.img-filter__input-radio {
+  .visuali-hidden;
 }
 @media @mobile-widths-only {
   .img-filter__range--2,
   .img-filter__range--3 {
     display: none;
+  }
+
+  .img-filter::after {
+    content: "";
+    left: 50%;
+    top: 121px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e9ebec;
   }
 }
 @media @tablet-widths {

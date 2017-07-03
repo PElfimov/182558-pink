@@ -1,24 +1,21 @@
 .like-block {
   position: relative;
   box-sizing: border-box;
-&::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  right:0;
-  transform: translateY(50%);
-  display: block;
-  width: 13px;
-  height: 12px;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    display: block;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
-
-}
-
 
 .like-block__btn {
   .visuali-hidden;
@@ -38,12 +35,15 @@
   text-transform: uppercase;
   color: #d22856;
 }
-
-
-@media @tablet-widths {
-.like-block{
-  width: 100%;
+@media @mobile-widths-only {
+  .like-block::after {
+    left: 18px;
+  }
 }
+@media @tablet-widths {
+  .like-block {
+    width: 100%;
+  }
 
   .like-block__text {
     padding-left: 0;

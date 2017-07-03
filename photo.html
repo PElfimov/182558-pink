@@ -231,20 +231,24 @@
       <div class="filter">
         <div class="filter__inner">
           <div class="filter__img">
-            <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото для загрузки">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img\photo-7-desktop@1x.jpg 1x, /img/photo-7-desktop@2x.jpg 2x,">
+              <source media="(min-width: 660px)" srcset="/img/photo-7-tablet@1x.jpg 1x, /img/photo-7-tablet@2x.jpg 2x">
+              <img src="/img/photo-7-mobile@1x.jpg" srcset="/img/photo-7-mobile@2x.jpg 2x" alt="Фото нашего пользователя">
+            </picture>
           </div>
           <form class="img-filter filter__controls" action="https://echo.htmlacademy.ru" method="post">
             <div class="img-filter__controls">
-              <label class="img-filter__btn img-filter__btn--border">
-                <input class="img-filter__input-radio" type="radio" name="filter-name" value="border">
+              <input class="img-filter__input-radio" id="border" type="radio" name="filter-name" value="border">
+              <label class="img-filter__btn img-filter__btn--border" for="border">
                 <span>Инструмент рамка</span>
               </label>
-              <label class="img-filter__btn img-filter__btn--fill">
-                <input class="img-filter__input-radio" type="radio" name="filter-name" value="fill">
+              <input class="img-filter__input-radio" type="radio" name="filter-name" value="fill" id="fill">
+              <label class="img-filter__btn img-filter__btn--fill" for="fill">
                 <span>Инструмент заливка</span>
               </label>
-              <label class="img-filter__btn img-filter__btn--brightness">
-                  <input class="img-filter__input-radio" type="radio" name="filter-name" value="brightness">
+              <input class="img-filter__input-radio" type="radio" name="filter-name" value="brightness" id="brightness">
+              <label class="img-filter__btn img-filter__btn--brightness" for="brightness">
                   <span>Инструмент Яркость</span>
               </label>
             </div>
@@ -264,7 +268,7 @@
             </div>
             <div class="img-filter__button-wrapper">
               <button type="submit" class="img-filter__button btn" name="push-img">Запостить</button>
-              <button type="submit" class="img-filter__button btn btn-disabled" name="cancel">Отмена</button>
+              <button type="submit" class="img-filter__button btn btn-disabled" name="cancel" disabled="disabled">Отмена</button>
             </div>
           </form>
 
