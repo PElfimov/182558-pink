@@ -5,6 +5,23 @@
 .gallery-item__photo {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+
+  &--best-day::after {
+    content: "Панорама дня";
+    position: absolute;
+    width: 140px;
+    height: 33px;
+    background-color: #d22856;
+    top: 0;
+    right: 19px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+  }
 }
 
 .gallery-item__photo img {
@@ -75,6 +92,10 @@
     margin-bottom: 22px;
     padding-left: 28px;
     width: 50%;
+
+    &--best {
+      padding-left: 0;
+    }
   }
 
   .gallery-item__user-time {
@@ -88,7 +109,7 @@
 
   .gallery-item--best-day {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   .gallery-item__photo--best-day {
@@ -96,6 +117,11 @@
     width: 660px;
     height: 509px;
     overflow: hidden;
+
+    &::after {
+      top: 57px;
+      right: 27px;
+    }
   }
 
   .gallery-item__photo--best-day img {
@@ -124,7 +150,7 @@
 
   .gallery-item__text--best-day p {
     padding-left: 28px;
-    margin-top: 1px;
+    margin-top: -1px;
     padding-right: 18px;
   }
 

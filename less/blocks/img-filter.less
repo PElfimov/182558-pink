@@ -141,7 +141,27 @@
     border-bottom: 1px solid @bg-lightgrey;
     height: 72px;
     background-color: rgba(255, 255, 255, 0.8);
+    background-position: left 10px top 28px;
+    background-size: 22px 22px;
+    cursor: auto;
+    &--border, &--border:hover {
+      background-image: url("../img/icon-editor-crop--active.svg");
+    }
+
+    &--fill, &--fill:hover {
+      background-image: url("../img/icon-editor-fill--active.svg");
+      background-size: 24px 22px;
+      background-position: left 10px top 30px;
+    }
+
+    &--brightness, &--brightness:hover {
+      background-image: url("../img/icon-editor-contrast--active.svg");
+      background-size: 16px 16px;
+      background-position: left 15px top 28px;
+    }
   }
+
+
 
   .img-filter__button {
     padding: 13px;
@@ -150,7 +170,7 @@
   }
 
   .img-filter__range {
-    margin-bottom: 71px;
+    margin-bottom: 70px;
   }
 
   .img-filter__range p {
@@ -161,7 +181,7 @@
   .img-filter__range-wrapper {
     position: absolute;
     top: 55px;
-    right: 17px;
+    right: 13px;
   }
 
   .img-filter__range--1 .img-filter__range-controls {
