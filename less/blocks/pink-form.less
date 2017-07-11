@@ -94,12 +94,30 @@
   margin-bottom: 51px;
 }
 
+.pink-form__checkbox input{
+  .visuali-hidden;
+}
+
 .pink-form__checkbox span {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  padding-left: 47px;
+  padding-left: 70px;
+  position: relative;
+
 }
+
+.pink-form__checkbox span::after{
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  border: solid #e5e5e5 2px;
+  background-image: url("");
+
+}
+
+
 
 .pink-form__contacts {
   .container;
