@@ -94,7 +94,7 @@
   margin-bottom: 51px;
 }
 
-.pink-form__checkbox input{
+.pink-form__checkbox input {
   .visuali-hidden;
 }
 
@@ -104,22 +104,32 @@
   font-weight: 400;
   padding-left: 70px;
   position: relative;
-
 }
 
-.pink-form__checkbox span::after{
+.pink-form__checkbox span::after {
   content: "";
   position: absolute;
-  width: 31px;
-  height: 31px;
+  left: 0;
+  top: -8px;
+  width: 35px;
+  height: 35px;
   border: solid #e5e5e5 2px;
+}
+
+.pink-form__checkbox:hover span::after {
+  border-color: #283645;
+}
+
+.pink-form__checkbox:active span::after,
+.pink-form__checkbox:focus span::after {
+  border-color: #d22856;
+}
+
+.pink-form__checkbox input:checked + span::after {
   background-image: url("../img/icon-yes--red.svg");
   background-repeat: no-repeat;
   background-position: center;
-
 }
-
-
 
 .pink-form__contacts {
   .container;
@@ -460,7 +470,6 @@
   .pink-form__checkbox {
     margin: 0;
     width: 260px;
-
   }
 
   .pink-form__checkbox:first-of-type {
@@ -489,14 +498,14 @@
     margin-bottom: 54px;
   }
 
-  .pink-form__your-emotions{
+  .pink-form__your-emotions {
     width: 939px;
     padding-bottom: 43px;
-
   }
-  .pink-form__emotions{
+
+  .pink-form__emotions {
     width: 795px;
-    height: 104px
+    height: 104px;
   }
 
   .page-footer--form {
