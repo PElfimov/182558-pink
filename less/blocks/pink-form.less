@@ -344,6 +344,17 @@
     width: 500px;
     height: 57px;
     border: solid 2px #e5e5e5;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top 50% right 22px;
+  }
+
+  .pink-form__input[type=email] {
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  .pink-form__input[type=tel] {
+    background-image: url("../img/icon-phone.svg");
   }
 
   .pink-form__input[name="name"] {
@@ -377,6 +388,16 @@
     padding-left: 47px;
   }
 
+  .pink-form__radio span::after {
+    left: 12px;
+    top: -4px;
+  }
+
+  .pink-form__radio input:checked + span::before {
+    left: 31.5px;
+    top: 15.5px;
+  }
+
   .pink-form__field--contacts {
     flex-direction: column;
     align-items: flex-start;
@@ -405,6 +426,10 @@
 
   .pink-form__checkbox span {
     padding-left: 118px;
+  }
+
+  .pink-form__checkbox span::after {
+    left: 59px;
   }
 
   .pink-form__emotions {
@@ -454,6 +479,7 @@
     font-size: 18px;
     line-height: 30px;
     width: 770px;
+    margin-top: 92px;
   }
 
   .pink-form__foolname {
@@ -481,6 +507,14 @@
     min-height: 164px;
   }
 
+  .pink-form__radio:first-of-type {
+    margin-top: 41px;
+  }
+
+  .pink-form__radio {
+    padding-left: 63px;
+  }
+
   .pink-form__contacts label {
     margin: 0;
   }
@@ -502,6 +536,7 @@
     width: 940px;
     box-sizing: border-box;
     min-height: 230px;
+        margin-top: 64px;
   }
 
   .pink-form__checkbox {
