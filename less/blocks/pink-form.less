@@ -248,13 +248,19 @@
   text-align: center;
 }
 
-.pink-form__sent-text span {
+.pink-form__sent-text--red {
   color: @bg-dark-red;
+}
+
+.pink-form__sent-text--desktop-only{
+  display: none;
 }
 @media @mobile-widths-only {
   .pink-form__text span {
     .visuali-hidden;
   }
+
+
 
   .pink-form__section-title--invincible {
     .visuali-hidden;
@@ -468,6 +474,11 @@
     min-height: 221px;
   }
 
+  .pink-form__sent-text--desktop-only{
+    display: inline;
+
+  }
+
   .pink-form__wrapper {
     width: 940px;
     padding: 10px;
@@ -538,29 +549,34 @@
     min-height: 230px;
     margin-top: 64px;
     padding-top: 58px;
+    padding-bottom: 9px;
   }
 
   .pink-form__checkbox {
-    margin: 0;
-    width: 260px;
+    margin-bottom: 49px;
+    margin-right: 116px;
   }
 
   .pink-form__checkbox:first-of-type {
-    margin: 0;
+    margin-top: 0;
   }
 
   .pink-form__checkbox span {
     padding-left: 0;
   }
 
+  .pink-form__checkbox span::after {
+    left: -59px;
+  }
+
   .pink-form__achievements-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: column;
-    max-height: 89px;
-    align-content:stretch;
-    width: 900px;
+    justify-content:flex-start;
+    padding-left: 119px;
+    height: 162px;
+    width: auto;
   }
 
   .pink-form__input {
