@@ -553,8 +553,31 @@
   }
 
   .pink-form__checkbox {
-    margin-bottom: 49px;
-    margin-right: 116px;
+    order:1;
+    width: 220px;
+
+    &--2 {
+      order: 4;
+    }
+
+    &--3 {
+      order: 2;
+    }
+    &--4 {
+      order: 5;
+    }
+    &--5 {
+      order: 3;
+    }
+    &--6 {
+      order: 6;
+    }
+  }
+
+  .pink-form__checkbox:nth-of-type(6){
+    margin-right: 70px;
+    outline: solid 1px red;
+    background-color: red;
   }
 
   .pink-form__checkbox:first-of-type {
@@ -572,16 +595,18 @@
   .pink-form__achievements-inner {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content:flex-start;
-    padding-left: 119px;
-    height: 162px;
     width: auto;
+    padding-left: 119px;
+
+
   }
 
   .pink-form__input {
     width: 316px;
   }
+
+
 
   .pink-form__input[name="name"] {
     width: 356px;
