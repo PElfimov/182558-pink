@@ -48,6 +48,16 @@
   display: block;
   width: 257px;
   height: 58px;
+  border: solid 2px  #e5e5e5;
+  outline: none;
+}
+
+.pink-form__input:hover {
+  border-color: #283645;
+}
+
+.pink-form__input:active, .pink-form__input:focus {
+  border-color: #d22856;
 }
 
 .pink-form__input[placeholder] {
@@ -223,6 +233,7 @@
   padding-top: 13px;
   color: @bg-darkblue;
   letter-spacing: 0.4px;
+  max-width: 255px;
 }
 
 .pink-form__send {
@@ -239,6 +250,21 @@
   margin: 0 auto;
   text-transform: uppercase;
   padding: 18px 0;
+}
+
+.pink-form__btn:hover {
+  background-color: #1c9b5e;
+  border-color: #1c9b5e;
+  color: #ffffff;
+
+}
+
+.pink-form__btn:active,
+.pink-form__btn:focus  {
+  background-color: #1c9b5e;
+  border-color: #1c9b5e;
+  color: #61b98f;
+
 }
 
 .pink-form__sent-text {
@@ -295,11 +321,11 @@
 
   .pink-form__field--contacts::after {
     content: "";
-    top: 1px;
-    right: 59px;
+    top: 2px;
+    right: 58px;
     position: absolute;
     width: 62px;
-    height: 60px;
+    height: 59px;
     background-color: #e5e5e5;
     background-repeat: no-repeat;
     background-position: top 50% right 22px;
@@ -451,6 +477,10 @@
     border: solid 2px #e5e5e5;
     width: 473px;
     height: 171px;
+  }
+
+  .pink-form__emotions[placeholder] {
+    max-width: 473px;
   }
 
   .pink-form__send {
@@ -644,6 +674,10 @@
   .pink-form__emotions {
     width: 795px;
     height: 104px;
+  }
+
+  .pink-form__emotions[placeholder] {
+    max-width: 795px;
   }
 
   .page-footer--form {
