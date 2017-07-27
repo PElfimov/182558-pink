@@ -67,7 +67,7 @@
           </ul>
         </div>
       </nav>
-      </div>
+    </div>
   </header>
   <main class="main-content">
     <section class="download-application">
@@ -145,15 +145,15 @@
           <span class="slider-pagination__item" tabindex="0"></span>
         </div>
         <div class="reviews__arrow reviews__arrow--right">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve" >
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
             <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
           </svg>
         </div>
         <div class="reviews__arrow reviews__arrow--left">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve" >
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
           <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
         </svg>
-      </div>
+        </div>
       </div>
     </section>
     <section class="price">
@@ -255,11 +255,13 @@
         </div>
       </div>
       <div class="contact__map">
-        <picture>
+        <picture class="js__enabled contact__map-img">
           <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg 1x, /img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg 1x, /img/bg-map-tablet@2x.jpg 2x">
           <img src="/img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.jpg 2x" alt="Карта нашего местоположения">
         </picture>
+        <div class="contact__yandex-map" id="yandex-map"> </div>
+      </div>
       </div>
 
     </section>
@@ -315,6 +317,8 @@
       </p>
     </div>
   </footer>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5bc3fc70a457cbc498d348e4469114d232cb60bae690b304642ec1d915b94120&amp;height=321&amp;lang=ru_RU&amp;scroll=false&id=yandex-map">
+  </script>
 </body>
 
 </html>
