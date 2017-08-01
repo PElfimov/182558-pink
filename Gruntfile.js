@@ -57,7 +57,9 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             "build/*.html",
-            "build/css/*.css"
+            "build/css/*.css",
+            "build/js/*.js"
+
           ]
         },
         options: {
@@ -75,6 +77,10 @@ module.exports = function(grunt) {
       html: {
         files: ["*.html"],
         tasks: ["copy:html"]
+      },
+      js: {
+        files: ["js/*.js"],
+        tasks: ["copy:js"]
       },
       style: {
         files: ["less/**/*.less"],
@@ -99,6 +105,13 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ["*.html"],
+          dest: "build"
+        }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/*.js"],
           dest: "build"
         }]
       }
