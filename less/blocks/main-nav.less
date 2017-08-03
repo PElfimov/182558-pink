@@ -1,10 +1,17 @@
+
+.modal-content-show {
+display: block;
+
+}
+
 .main-nav {
 
   position: relative;
 }
 
 .main-nav--close{
-  display: none; //Сокрытие меню
+   //Сокрытие меню
+display: none;
 }
 
 
@@ -12,36 +19,34 @@
 .main-nav__toggler {
   display: block;
   position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 50%;
+  left: 39%;
   transform: translateX(117px);
   top: -48px;
 }
 
-.main-nav__toggler::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 5px;
-  position: absolute;
-  background-color: #ffffff;
-  transform: rotate(45deg) translate(4px, 9px);
-}
+// .main-nav__toggler::after {
+//   content: "";
+//   display: block;
+//   width: 30px;
+//   height: 5px;
+//   position: absolute;
+//   background-color: #ffffff;
+//   transform: rotate(45deg) translate(4px, 9px);
+// }
 
 .main-nav__toggler-wrapper{
   .container;
   position: relative;
 }
-.main-nav__toggler::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 5px;
-  background-color: #ffffff;
-  transform: rotate(-45deg) translate(-9px, 4px);
-}
+// .main-nav__toggler::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   width: 30px;
+//   height: 5px;
+//   background-color: #ffffff;
+//   transform: rotate(-45deg) translate(-9px, 4px);
+// }
 
 .main-nav__toggler:hover::before {
   background-color: #d22856;
